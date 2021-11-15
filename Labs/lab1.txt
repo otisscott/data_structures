@@ -1,0 +1,37 @@
+Vitamins
+1.) print(peter.name, peter.age)
+      16, 18
+
+    print(peter.name, peter.age)
+      Peter Parker, 18
+
+    print(peter.name, peter.age)
+      student, 16
+
+    print(peter)
+      Name: Peter Parker
+      Age: 16
+      Courses:
+
+    print(peter)
+      Name: Peter Parker
+      Age: 16
+      Courses: Algebra , Chemistry
+
+    peter.remove_course("Spanish")
+      Course Not Found: Spanish
+
+    peter.remove_course("Chemistry")
+      Removed Course: Chemistry
+
+    print(peter.courses)
+      ['Algebra', 'Physics', 'Economics']
+
+    print(tom.courses)
+      ['Algebra', 'Physics' , 'Economics']
+
+    print(peter.name, peter.age)
+      Tom Holland, 16
+
+    print(tom.name, tom.age)
+      Peter Parker, 18
