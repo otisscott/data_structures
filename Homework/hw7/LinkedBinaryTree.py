@@ -127,3 +127,21 @@ class LinkedBinaryTree:
                 else:
                     return left + right
         return helper(self.root)
+
+    def iterative_inorder(self):
+        cur_node = self.root
+        while cur_node:
+            if not cur_node.left:
+                yield cur_node.data
+                cur_node = cur_node.right
+            else:
+                left = cur_node.left
+                while left.right and left.right != cur_node:
+                    left = left.right
+                if not left.right:
+                    left.right = cur_node
+                    cur_node = cur_node.left
+                else:
+                    left.right = None
+                    yield cur_node.data
+                    cur_node = cur_node.right

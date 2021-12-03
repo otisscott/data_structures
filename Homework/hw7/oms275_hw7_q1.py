@@ -1,3 +1,6 @@
+from LinkedBinaryTree import *
+
+
 def subtree_min_and_max(root):
     if not root:
         return
